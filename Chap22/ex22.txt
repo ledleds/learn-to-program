@@ -1,0 +1,44 @@
+def starts a method
+end to end the method
+
+= assigns
+== checks if something is equal
+# is for writing a comment
+
+Maths
++ plus (can also be used for adding strings together)
+- minus
+/ divide
+* multiply
+% modulus
+
+< Less than
+> greater than
+<= less than or equal to
+>= greater than or equal to
++= plus/equal for use with incrementing
+|| OR
+&& AND
+#{} for interpolation
+" " double quotes
+'' single quotes
+""" """ triple quotes: for multi line string
+\n new line
+\t tab
+\\ backslash
+gets gets input from the user
+chomp removes new line
+to_i to integer
+to_s to string
+to_f to float
+ARGV a placeholder for an argument which is entered before the program is run
+$stdin standard input, for use with ARGV on gets
+open(filename) a method that takes a filename as a parameter and makes it available to ruby
+read a file object method, returns the content of the file
+.truncate() deletes a file
+.write a file object method, writes the given string to the file
+.close a file object method, closes the file
+.length returns the length of a string
+.exist? returns a boolean value if file exists or not
+*args used for multiple arguments, creates a list of arguments
+.seek() searches for a particular positing within a file
