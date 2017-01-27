@@ -47,4 +47,4 @@ end
 # Changed above.
 
 # Q: What happens if you change the initial values for people, cats, and dogs?
-# A: You would have to change all the values in the program. Otherwise your code wouldn't work & would come back with an error.
+# A: It would still run as you are comparing numbers!
