@@ -13,7 +13,7 @@ def num(top, incr)
   numbers.each {|num| puts num}
 end
 
-
+# Write it for for-loops and (0..6) range operator. The incrementor isn't needed anymore.
 num(10, 3)
 
 numbers = []
