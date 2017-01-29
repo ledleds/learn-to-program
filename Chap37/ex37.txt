@@ -1,0 +1,210 @@
+Keywords
+
+BEGIN
+Run this block when the script starts.
+e.g BEGIN { puts "hi" }
+
+END
+Run this block when the script is done.
+e.g END { puts "hi" }
+
+alias
+Create another name for a function.
+e.g alias X Y
+
+and
+Logical and, but lower priority than &&.
+e.g puts "Hello" and "Goodbye"
+
+begin
+Start a block, usually for exceptions.
+e.g begin end
+
+break
+Break out of a loop right now.
+e.g while true; break; end
+
+case
+Case style conditional, like an if.
+e.g case X; when Y; else; end
+
+class
+Define a new class.
+e.g class X; end
+
+def
+Define a new function.
+e.g def X(); end
+
+defined?
+Is this class/function/etc. defined already?
+e.g defined? Class == "constant"
+
+do
+Create a block that maybe takes a parameter.
+e.g (0..5).each do |x| puts x end
+
+else
+Else conditional.
+e.g if X; else; end
+
+elsif
+Else if conditional
+e.g if X; elsif Y; else; end
+
+end
+Ends blocks, functions, classes, everything.
+e.g begin end # many others
+
+ensure
+Run this code whether an exception happens or not.
+e.g begin ensure end
+
+for
+For loop syntax. The .each syntax is preferred.
+e.g for X in Y; end
+
+if
+If conditional.
+e.g if X; end
+
+in
+In part of for-loops.
+e.g for X in Y; end
+
+module
+Define a new module.
+e.g module X; end
+
+next
+Skip to the next element of a .each iterator.
+e.g (0..5).each {|y| next }
+
+not
+Logical not.
+e.g But use ! instead.	not true == false
+
+or
+Logical or.
+e.g puts "Hello" or "Goodbye"
+
+redo
+Rerun a code block exactly the same.
+e.g (0..5).each {|i| redo if i > 2}
+
+rescue
+Run this code if an exception happens.
+e.g begin rescue X; end
+
+retry
+In a rescue clause, says to try the block again.
+e.g (0..5).each {|i| retry if i > 2}
+
+return
+Returns a value from a function. Mostly optional.
+e.g return X
+
+self
+The current object, class, or module.
+e.g defined? self == "self"
+
+super
+The parent class of this class.
+e.g super
+
+then
+Can be used with if optionally.
+e.g if true then puts "hi" end
+
+undef
+Remove a function definition from a class.
+e.g undef X
+
+unless
+Inverse of if.
+e.g unless false then puts "not" end
+
+until
+Inverse of while, execute block as long as false.
+e.g until false; end
+when	Part of case conditionals.
+e.g case X; when Y; else; end
+
+while
+While loop.
+e.g while true; end
+
+yield
+Pause and transfer control to the code block.
+e.g yield
+
+
+Data Types
+
+For data types, write out what makes up each one. For example, with strings write out how you create a string. For numbers write out a few numbers.
+
+Boolean Values
+True / false
+
+nil
+Represents "nothing" or "no value".
+
+strings
+Stores textual information.
+
+numbers
+Stores integers. e.g i = 100
+
+floats
+Stores decimals. e.g i = 10.389
+
+arrays
+Stores a list of things.	e.g j = [1,2,3,4]
+
+hashes
+Stores a key=value mapping of things.	e.g e = {'x' => 1, 'y' => 2}
+
+
+String Escape Sequences
+
+\\	Backslash
+\'	Single-quote
+\"	Double-quote
+\a	Bell
+\b	Backspace
+\f	Formfeed
+\n	Newline
+\r	Carriage
+\t	Tab
+\v	Vertical tab
+
+
+Operators
+
++   Add
+-	  Subtract
+*	  Multiply
+**	Power of	2 e.g ** 4 == 16
+
+/	  Divide
+%	  Modulus
+>	  Greater than
+.	  Dot access	e.g "1".to_i == 1
+::	Colon access	e.g Module::Class
+[]	List brackets
+!	  Not
+<	  Less than
+>	  Greater than
+>=	Greater than equal
+<=	Less than equal
+<=>	Comparison	e.g 4 <=> 4 == 0
+==	Equal
+===	Equality
+!=	Not equal
+&&	Logical and (higher precedence)
+||	Logical or (higher precedence)
+..	Range inclusive	e.g (0..3).to_a == [0, 1, 2, 3]
+...	Range non-inclusive	e.g (0...3).to_a == [0, 1, 2]
+@	  Object scope	e.g @var ; @@classvar
+@@	Class scope	e.g @var ; @@classvar
+$	  Global scope	e.g $stdin
